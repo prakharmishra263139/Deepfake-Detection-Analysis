@@ -70,11 +70,13 @@ Preprocessing involves resizing images, normalizing frame sizes, cropping, paddi
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Feature Extraction Module:
+
 The feature extraction module uses Convolutional Neural Networks (CNNs) to analyze spatial features within images and video frames. Pretrained models like ResNet and InceptionNet are employed to extract high-level features indicative of manipulation, such as pixel-level inconsistencies, lighting discrepancies, and unnatural facial expressions.
 For temporal analysis, Recurrent Neural Networks (RNNs), specifically Long Short-Term Memory (LSTM) networks, are used to capture temporal dynamics across video frames. This allows the system to detect inconsistencies in facial movements, lip synchronization, and audio-visual alignment.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Classification Module:
+
 After feature extraction, the classification module determines whether the input media is genuine or manipulated. Support Vector Machines (SVM) and K-Nearest Neighbors (KNN) are used to classify the features obtained from CNNs and RNNs. These classifiers use the extracted spatial and temporal features to identify signs of manipulation.
 
