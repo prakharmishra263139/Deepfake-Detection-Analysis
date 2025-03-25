@@ -80,3 +80,10 @@ Classification Module:
 
 After feature extraction, the classification module determines whether the input media is genuine or manipulated. Support Vector Machines (SVM) and K-Nearest Neighbors (KNN) are used to classify the features obtained from CNNs and RNNs. These classifiers use the extracted spatial and temporal features to identify signs of manipulation.
 
+  ------------           --------------------          --------------------                ----------------                ----------------
+ | InputMedia |-------> | Data Preprocessing |------->| Feature Extraction |------------->| Classification |------------> |     Output     |
+ |------------|         |--------------------|        |--------------------|              |----------------|              |----------------|
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
